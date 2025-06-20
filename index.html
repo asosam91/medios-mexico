@@ -4,9 +4,43 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Medios y Noticias en México</title>
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 </head>
 <body>
   <div id="root"></div>
+  <div id="n8n-chat"></div>
   <script type="module" src="/src/main.jsx"></script>
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+    createChat({
+      webhookUrl: 'https://n8n.adriansosa.net/webhook/a0abec3a-c87e-46f8-9dbc-9a79bf1f0f23/chat',
+      webhookConfig: {
+        method: 'POST',
+        headers: {},
+      },
+      target: '#n8n-chat',
+      mode: 'window',
+      chatInputKey: 'chatInput',
+      chatSessionKey: 'sessionId',
+      loadPreviousSession: true,
+      metadata: {},
+      showWelcomeScreen: false,
+      defaultLanguage: 'es',
+      initialMessages: [
+        'Hola! 👋',
+        'Me llamo Adrián. ¿Como te puedo ayudar hoy?'
+      ],
+      i18n: {
+        es: {
+          title: 'Hola! 👋',
+          subtitle: 'Inicia un chat. Estamos para ayudarte 24/7.',
+          footer: '',
+          getStarted: 'New Conversation',
+          inputPlaceholder: 'Escribe tu pregunta...'
+        }
+      }
+    });
+  </script>
 </body>
 </html>
