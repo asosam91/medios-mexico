@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div className="container">
       <header>
-        <h1>Top 10 Empresas de Medios y Noticias en México</h1>
+        <h1>Top 9 Empresas de Medios y Noticias en México</h1>
       </header>
       <main id="empresas-container">
         {empresas.map((emp) => (
@@ -27,6 +27,9 @@ export default function App() {
           </article>
         ))}
       </main>
+      <footer>
+        &copy; 2025 Medios de México
+      </footer>
     </div>
   );
 }

@@ -117,18 +117,5 @@ const empresas = [
     enfoque: "Noticias de actualidad y programas de opinión.",
     sitioWeb: "https://www.radioformula.com.mx",
   },
-  {
-    nombreComercial: "Aristegui Noticias",
-    nombreOficial: "Aristegui Noticias",
-    dueno: "Carmen Aristegui",
-    sector: "Medio digital",
-    medios: ["Web"],
-    resumen:
-      "Portal de noticias independiente fundado por la periodista Carmen Aristegui.",
-    mision: "Realizar periodismo de investigación con rigor y ética.",
-    vision: "Ser un referente digital de la información en México.",
-    enfoque: "Investigación y análisis político.",
-    sitioWeb: "https://aristeguinoticias.com",
-  },
 ];
 export default empresas;

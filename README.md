@@ -1,6 +1,9 @@
 # Medios México (React)
 
-Aplicación React que muestra a las principales empresas de medios y noticias de México. Utiliza Vite como bundler y ofrece una interfaz responsiva.
+Aplicación React que lista a las empresas de medios más influyentes de México. El proyecto usa Vite para un desarrollo rápido y ofrece una interfaz formal y profesional.
+
+## Requisitos
+Necesitas Node.js 18 o superior y npm instalados en tu sistema.
 
 ## Estructura
 - **index.html**: página principal con el contenedor de React.
