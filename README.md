@@ -33,6 +33,7 @@ npm run build
 ```
 Los archivos listos se generan en `dist/` y pueden desplegarse en un servidor estático o en servicios como AWS.
 
+
 ## Licencia
 Consulta el archivo [LICENSE](LICENSE) para más detalles.
 

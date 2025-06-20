@@ -7,12 +7,13 @@ phases:
   pre_build:
     commands:
       - echo Instalando dependencias...
+      - npm install
   build:
     commands:
       - echo Compilando el proyecto...
-      - npm install
       - npm run build
 artifacts:
   files:
-    - '**/*'
-  base-directory: dist
+    - appspec.yml
+    - scripts/**
+    - dist/**
