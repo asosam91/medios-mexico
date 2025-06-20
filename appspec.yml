@@ -1,5 +1,10 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /var/www/html
+  - source: dist
+    destination: /var/www/medios-mexico
+hooks:
+  AfterInstall:
+    - location: scripts/setup_nginx.sh
+      timeout: 300
+      runas: root
