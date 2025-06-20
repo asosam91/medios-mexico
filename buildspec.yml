@@ -10,8 +10,8 @@ phases:
   build:
     commands:
       - echo Compilando el proyecto...
-      - mkdir -p dist
-      - cp -r *.html *.css *.js dist/
+      - npm install
+      - npm run build
 artifacts:
   files:
     - '**/*'
