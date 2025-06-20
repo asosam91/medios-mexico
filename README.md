@@ -33,20 +33,6 @@ npm run build
 ```
 Los archivos listos se generan en `dist/` y pueden desplegarse en un servidor estático o en servicios como AWS.
 
-## Despliegue con AWS
-Este repositorio está listo para integrarse en AWS CodePipeline y CodeDeploy.
-El archivo `buildspec.yml` compila la aplicación y entrega los artefactos a CodeDeploy.
-Durante la instalación, el script `scripts/setup_nginx.sh` configura Nginx en el
-servidor de destino. Si la configuración no existe, el script crea
-`/etc/nginx/sites-available/medios-mexico`, establece el enlace simbólico en
-`/etc/nginx/sites-enabled/` y reinicia el servicio.
-
-Para desplegar desde cero:
-1. Crea un bucket de S3 y un role de servicio para CodeDeploy.
-2. Configura una instancia EC2 con Nginx y el agente de CodeDeploy.
-3. Conecta este repositorio a CodePipeline apuntando al branch deseado.
-4. Una vez que la canalización se ejecute, la aplicación quedará disponible en
-   `http://medios-mexico.adriansosa.net`.
 
 ## Licencia
 Consulta el archivo [LICENSE](LICENSE) para más detalles.
