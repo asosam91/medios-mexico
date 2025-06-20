@@ -1,25 +1,35 @@
-# medios-mexico
-sitio web de medios
-# Top 10 Empresas de Medios y Noticias en México
+# Medios México (React)
 
-Este sitio web muestra información sobre las 10 empresas más importantes de medios y noticias en México, creado con HTML, CSS y JavaScript puro.
+Aplicación React que muestra a las principales empresas de medios y noticias de México. Utiliza Vite como bundler y ofrece una interfaz responsiva.
 
-## 🚀 Tecnologías utilizadas
+## Estructura
+- **index.html**: página principal con el contenedor de React.
+- **src/data.js**: información detallada de cada compañía.
+- **src/App.jsx**: componente que construye las tarjetas de forma dinámica.
+- **src/styles.css**: estilos y maquetado responsivo.
 
-- HTML5
-- CSS3
-- JavaScript ES6
-- Responsive Design
-- Despliegue automatizado en AWS
+## Ejecución local
+1. Clona el repositorio y entra en la carpeta:
+   ```bash
+   git clone <repo-url>
+   cd medios-mexico
+   ```
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+3. Inicia el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+4. Abre el enlace que muestra la terminal (por defecto `http://localhost:5173`).
 
-## 📦 Estructura del Proyecto
+## Construcción para producción
+```bash
+npm run build
+```
+Los archivos listos se generan en `dist/` y pueden desplegarse en un servidor estático o en servicios como AWS.
 
-Ver carpeta `/` para detalles completos.
+## Licencia
+Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
-## 🛠️ Despliegue
-
-Este proyecto está listo para ser desplegado usando AWS CodePipeline y CodeDeploy. Ver archivos `appspec.yml` y `buildspec.yml`.
-
-## 💡 Hecho con IA
-
-Este sitio fue creado con ayuda de inteligencia artificial, demostrando cómo se puede desarrollar un sitio profesional de forma rápida y eficiente.
